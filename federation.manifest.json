@@ -1,0 +1,3 @@
+{
+  "//": "Empty manifest for shell - prevents serve -s from returning index.html for this path"
+} 

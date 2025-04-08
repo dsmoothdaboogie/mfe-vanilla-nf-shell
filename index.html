@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS MFE Shell</title>
+    <!-- Load Zone.js FIRST -->
+    <script src="/assets/js/zone.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importmap for Native Federation - ESSENTIAL -->
+    <!-- <script type="importmap" src="importmap.json"></script> --> 
+    <script type="importmap">
+    {
+        "imports": {
+            "@softarc/native-federation-runtime": "/node_modules/@softarc/native-federation-runtime/fesm2022/softarc-native-federation-runtime.mjs"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Microfrontend Shell</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/mfe1">Load MFE1 (Script)</a>
+            <a href="/mfe2">Load MFE2 (Federation)</a>
+            <!-- Add more links for other MFEs -->
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- Microfrontends will be rendered here -->
+    </main>
+
+    <footer>
+        <p>Vanilla JS Shell Footer</p>
+    </footer>
+
+    <!-- Load the main application logic -->
+    <script type="module" src="src/main.js"></script>
+</body>
+</html> 
